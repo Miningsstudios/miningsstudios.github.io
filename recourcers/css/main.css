@@ -1,14 +1,18 @@
 body {
-    background-color: #333333;
+    background-color: #000000;
     color: white;
-    font-family: 'Mining Regular';
+    font-family: 'Mining Regular', sans-serif;
     font-size: 25px;
     margin: 0;
 }
 .icon {
-    font-size: 18px;
+    font-size: 10px;
     width: 100px;
     padding: 5px;
+}
+.icon.i {
+    margin-top: -50px;
+    margin-left: -30px;
 }
 .icon * {
     margin: 0;
@@ -25,13 +29,17 @@ a {
 }
 #root {
     position: fixed;
-    background-color: #333333d0;
+    background-color: #1212124c;
     width: 100%;
     border-bottom: 2px solid gray;
     height: 80px;
     display: flex;
     align-items: center;
     padding: 3px;
+}
+#iconindex {
+    position: relative;
+    top: 50px;
 }
 #root div object {
     margin-top: 70px;
@@ -52,5 +60,45 @@ a {
 }
 .center {
     text-align: center;
+    justify-self: center;
+}
+.boxframe, .boxframe.f {
+    position: relative;
+    background-image: repeating-linear-gradient(
+    to left,
+    #2600ff,
+    #00ff00,
+    #ff0000,
+    #ddff00
+    );
+    background-size: 400% auto;
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease
+}
+.boxframe:hover {
+    box-shadow: 15px 15px 26px 0px #28282870;
+    background-position: right center;
+}
+.boxframe .text, .boxframe.f .text {
+    background-color: rgba(0, 0, 0, 0.248);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    justify-self: center;
+    height: 50px;
+    padding: -5px;
+    text-align: center;
+}
+.boxframe h2 {
+    position: relative;
+    bottom: 20px;
+}
+#games {
+    display: flex;
     justify-self: center;
 }

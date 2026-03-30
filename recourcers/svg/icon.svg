@@ -1,4 +1,4 @@
-<svg viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       @font-face {
@@ -9,7 +9,7 @@
       
       .miningFont {
         font-family: 'Mining Regular', sans-serif; /* Fallback para sans-serif */
-        font-size: 80px;
+        font-size: 70px;
         fill: #ffffff;
         /* Adicionando um contorno leve para o texto não sumir se a imagem for clara */
         stroke: black;
@@ -20,13 +20,13 @@
   
   <image 
     href="data:image/png;base64,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" 
-    x="60" 
-    y="50" 
+    x="150" 
+    y="60" 
     width="200" 
     height="200" 
     preserveAspectRatio="xMidYMid slice" />
 
-  <text x="25%" y="300" text-anchor="middle" class="miningFont">  
+  <text x="50%" y="300" text-anchor="middle" class="miningFont">  
       Minings Studios
   </text>
 </svg>
